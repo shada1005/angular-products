@@ -1,0 +1,20 @@
+<div class="container product-card  p-5 " *ngIf="product">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <h2 class="name">Product name:</h2>
+          <input #proName ng-model="proName" type="text" class=" styleinput m-2 form-control" required="required" value="{{ product.name }}"  placeholder="name of the product" />
+          <!-- <span ng-show="!proName">Sorry, the field is empty!</span> -->
+
+        </div>
+
+        <div>
+          <h2 class="name">Quantity:</h2>
+          <input #quantity ng-model="quantity" type="number" class="styleinput m-2 form-control" required="required" value="{{ product.inventory }}"  placeholder="quantity"/>
+          <!-- <span ng-show="!quantity.value">Sorry, the field is empty!</span> -->
+        </div>
+
+        <button  type="button" class="m-2 btn btn-success"  (click)="update()">Update</button>
+      </div>
+    </div>
+</div>

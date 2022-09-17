@@ -1,0 +1,26 @@
+.product-card{
+
+    background-color: #b5b1db;
+    border-width: 5px;
+    border-color: rgb(184, 182, 182);
+    border-style: dotted ;
+    margin-top: 50px;
+}
+.name{
+    font-family: sans-serif;
+    color: rgb(81, 45, 92);
+    margin-bottom: 2px;
+
+
+}
+
+.styleinput{
+    color: rgb(190, 39, 110);
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+    font-weight: bold;
+
+
+
+
+}

@@ -1,0 +1,21 @@
+<div class="container bbody ">
+  <div class="table-responsive " >
+    <table class="table table-fixed table-striped table-hover">
+      <thead >
+        <th class="col-xs-3" >Product</th>
+        <th class="col-xs-3" >#</th>
+        <th class="col-xs-3">#</th>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of listofproducts">
+        <td>{{product.name}}</td>
+        <td><button type="button" class="btn btn-info" (click)="enter(product.id)">VIEW</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="delete(product.id)">Delete</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
